@@ -147,7 +147,9 @@ $(function (){
     $('#export').prop('disabled', keys.length === 0);
     if (keys.length === pageSize && totalCount > pageSize) {
       $('#selectAll').show();
-    } 
+    } else {
+      $('#selectAll').hide();
+    }
     $('#clearSelect').hide();
   })
   $('#selectAll > a').click(function () {
